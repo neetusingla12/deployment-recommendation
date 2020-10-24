@@ -99,8 +99,10 @@ data = data.sort_values(by='date',ascending=False)
 new=data.groupby('cluster', group_keys=False,as_index=False).apply(lambda x: x.sort_values('date', ascending=False)).groupby('cluster').head(2)
 #new
 news_recommended=new[['article_id','link','text','title','date','cluster']]
-text1=news_recommended['text']
+text1=list(news_recommended['title'])
+nn=[]
+nn.append(text1)
+nn
 #print("news recommended are",text1)
-pickle.dump(text1,open('model1.pkl','wb'))
+pickle.dump(nn,open('model1.pkl','wb'))
 
-pickle.dump(news_recommended,open('model1.pkl','wb'))
