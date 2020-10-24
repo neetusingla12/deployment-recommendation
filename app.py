@@ -13,7 +13,7 @@ app = Flask(__name__)
 model = pickle.load(open('model1.pkl', 'rb'))
 
 def home():
-    return render_template('index.html',prediction_text="News recommended are:", output)
+    return render_template('index.html',prediction_text="News recommended are:", model)
 
 
 
