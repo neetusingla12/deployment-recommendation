@@ -104,5 +104,5 @@ nn=[]
 nn.append(text1)
 nn
 #print("news recommended are",text1)
-pickle.dump(nn,open('model1.pkl','wb'))
+model=pickle.dump(nn,open('model1.pkl','wb'))
 
