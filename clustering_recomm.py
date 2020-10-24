@@ -103,6 +103,7 @@ text1=list(news_recommended['title'])
 nn=[]
 nn.append(text1)
 nn
-#print("news recommended are",text1)
-model=pickle.dump(nn,open('model1.pkl','wb'))
 
+pickle.dump(nn,open('model1.pkl','wb'))
+model = pickle.load(open('model1.pkl','rb'))
+print(model)
