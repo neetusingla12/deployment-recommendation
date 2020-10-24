@@ -28,7 +28,7 @@ def predict():
     #output = round(prediction[0], 2)
     output = model
 
-    return render_template('index.html', prediction_text='News recommended are:", output)
+    return render_template('index.html', prediction_text="News recommended are:", output)
 
 
 if __name__ == "__main__":
