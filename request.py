@@ -7,7 +7,7 @@ Created on Sat Oct 24 16:39:54 2020
 
 import requests
 
-url = 'http://localhost:5000/predict_api'
+url = 'http://localhost:5000/news-recom'
 r = requests.post(url)
 
 print(r.json())
